@@ -1,0 +1,16 @@
+apps:
+  - sample_python_app:
+      license_file: sample-python-app/licenses.json
+      language: python
+      dependency_file: sample-python-app/requirements.txt
+  - sample_ruby_app:
+      license_file: sample-ruby-app/licenses.json
+      language: ruby
+      dependency_file: sample-ruby-app/Gemfile.lock
+  - sample_node_app:
+      license_file: sample-node-app/licenses.json
+      language: node
+      dependency_file: sample-node-app/package-lock-v2.json
+block_build: False
+allowed_licenses_file: ./allowed-licenses.json
+dependency_exceptions_file: ./dependency-exceptions.json
